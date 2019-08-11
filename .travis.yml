@@ -19,7 +19,7 @@ after_install:
 
 script:
   - rake ci:docker:script
-  - python3 -m pip install -U nbconvert
+  - conda install nbconvert
   - jupyter-nbconvert --to html --execute test/iruby/test4nbconvert.ipynb
 
 matrix:
