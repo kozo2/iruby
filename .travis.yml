@@ -17,7 +17,9 @@ after_install:
   - rake ci:docker:install
   - docker images
 
-script: rake ci:docker:script
+script:
+  - rake ci:docker:script
+  - jupyter-nbconvert --to html --execute test/iruby/test4nbconvert.ipynb
 
 matrix:
   include:
