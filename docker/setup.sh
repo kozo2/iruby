@@ -13,3 +13,5 @@ apt-get install -y --no-install-recommends \
 cd /tmp/iruby
 bundle install --with test --without plot
 pip3 install jupyter nbconvert
+ls
+jupyter kernelspec list
