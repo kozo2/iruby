@@ -1,1 +1,2 @@
 jupyter-console>=6.0.0
+nbconvert
