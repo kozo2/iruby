@@ -10,6 +10,3 @@ for adapter in $ADAPTERS; do
   export IRUBY_TEST_SESSION_ADAPTER_NAME=$adapter
   bundle exec rake test TESTOPTS=-v
 done
-
-ls
-nbconvert --version
